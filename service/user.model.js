@@ -9,6 +9,7 @@ function model(sequelize) {
     firstName: { type: DataTypes.STRING, allowNull: false },
     lastName: { type: DataTypes.STRING, allowNull: false },
     verified:{type:DataTypes.DATE},
+    verifiedToken:{type:DataTypes.STRING},
     isVerified:{type:DataTypes.VIRTUAL,get(){return !!(this.verified)}}
   };
   return sequelize.define("details", details);

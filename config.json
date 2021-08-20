@@ -6,13 +6,13 @@
         "password": "root",
         "database": "students"
     },
-    "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "secret": "908a4136f9d5192d5009cc887ec428a4",
     "emailFrom": "vanshuaman2626@gmail.com",
     "smtpOptions": {
-        "host": "[ENTER YOUR OWN SMTP OPTIONS OR CREATE FREE TEST ACCOUNT IN ONE CLICK AT https://ethereal.email/]",
+        "service": "gmail",
         "port": 587,
         "auth": {
-            "user": "",
+            "user": "vanshuaman2626@gmail.com",
             "pass": ""
         }
     }
