@@ -58,3 +58,13 @@ module.exports.login = async(req,res,next)=>{
     })
 }
 
+module.exports.forgetpassword = async (req,res,next)=>{
+    await services.forgetpassword(req.body.email).then(data=>{
+        res.send(data);
+    })
+}
+module.exports.resetpassword = async (req,res,next)=>{
+    await services.resetpassword(req.params.token,req.body.password).then((data)=>{
+        res.send(data)
+    })
+}
